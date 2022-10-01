@@ -1,0 +1,65 @@
+<?php 
+	/**
+	 * 
+	 */
+	class Login extends CI_Controller
+	{
+		public function index()
+		{
+			$this->load->model("LoginModel");
+			if (isset($_REQUEST['Login'])) {
+				$Username = $this->input->post("Username");
+				$Password = $this->input->post("Password");
+
+				$data = $this->LoginModel->GetUserCredentials($Username, $Password);
+
+				if (isset($data)) {
+					$this->session->set_userdata('Admin', $data);
+				}
+				else
+				{
+					echo "<script>";
+					echo "alert('Email or Password may be Wrong')";
+					echo "</script>";
+				}
+				redirect(base_url());
+			}
+			else
+			{
+				$this->load->view("login");
+			}
+			
+		}
+
+		public function ChangePassword()
+		{
+			if (isset($_REQUEST['ChangePassword'])) {
+				$this->load->model("LoginModel");
+				
+				$id = $_SESSION['Admin'];
+				$OldPassword = $this->input->post("OldPassword");
+				$data['Admin_Password'] = $this->input->post("NewPassword");
+				
+				if ($OldPassword==$id['Admin_Password']) {
+					$this->LoginModel->ChangePassword($id['Admin_id'],$data);
+					redirect(base_url());
+				}
+				else
+				{
+					echo "<script>";
+					echo "alert('Old Password is wrong')";
+					echo "</script>";
+				}
+			}
+				// $this->load->view("header","Change Password");
+				$this->load->view("ChangePassword");
+				// $this->load->view("footer");
+		}
+
+		public function logout()
+		{
+			$this->session->unset_userdata('Admin');
+			redirect(base_url().'index.php/Login');
+		}
+	}
+ ?>

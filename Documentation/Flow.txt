@@ -1,0 +1,28 @@
+Users:
+	Admin
+	Teacher
+	Student
+	
+	
+	Admin:
+		Manage all the Users, and other common data like state, City, ect.
+		Will send notification and Login Credentials to student and faculty
+		Manage Exam Schedule, courses, syllabus
+		Give Certificate to Student
+		View Contact Us details(Queries)
+		
+	Teacher:
+		Will receive Login credentials from admin(By mail)
+		Will update when login first time
+		Will upload material and create question paper
+		Can see result, syllabus, notification
+		
+	Student:
+		Admission(Register)
+		Login Authentication by credentials received from admin(By Mail)
+		Will receive materials day by day
+		Will receive notification of exam and result
+		Will receive Certificate
+		
+Extras:
+	Attendence

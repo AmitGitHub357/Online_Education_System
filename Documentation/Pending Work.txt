@@ -1,0 +1,7 @@
+Validation in all the pages
+
+Unlink file in Course and Event
+
+Result module for Student
+
+Contact Up page at user side

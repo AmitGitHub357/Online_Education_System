@@ -1,0 +1,21 @@
+Remove Customer Profile
+
+Limitations
+
+Feasibility Study and SE Model
+
+RIsk Analysis
+
+Project schedule
+
+Diagrams
+
+Screenshots
+
+Architecture design
+
+Unit testing
+
+Future Enhancement
+
+Reference

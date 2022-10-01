@@ -1,0 +1,72 @@
+[Admin]-(Login), 
+	(Login)-(Manage Student and Faculty),
+		(Manage Student and Faculty)>(Add),
+		(Manage Student and Faculty)>(View),
+		(Manage Student and Faculty)>(Delete),
+		(Manage Student and Faculty)>(Give Email and Password via Email),
+	 
+	(Login) - (Manage State and City),
+		(Manage State and City) > (Add),
+		(Manage State and City) > (View),
+		(Manage State and City) > (Delete),
+		(Manage State and City) > (Update),
+		(Manage State and City) > (Recover Deleted),
+		
+	(Login) - (Manage Category and Course with Syllabus),
+		(Manage Category and Course) > (Add),
+		(Manage Category and Course) > (View),
+		(Manage Category and Course) > (Delete),
+		(Manage Category and Course) > (Update),
+		(Manage Category and Course) > (Recover Deleted),
+		
+	(Login) - (Manage Exam Schedules and Events),
+		(Manage Exam Schedules and Events) > (Add),
+		(Manage Exam Schedules and Events) > (View),
+		(Manage Exam Schedules and Events) > (Delete),
+		(Manage Exam Schedules and Events) > (Update),
+		(Manage Exam Schedules and Events) > (Recover Deleted),
+		
+	(Login) - (Manage Notification),
+		(Manage Notification) > (Add),
+		(Manage Notification) > (View),
+		(Manage Notification) > (Delete),
+		(Manage Notification) > (Update),
+		(Manage Notification) > (Recover Deleted),
+		(Manage Notification) > (Send to selected Students),
+		
+	(Login) - (View Questions Papers and Materials),
+	
+	(Login) - (View Results),
+	
+	(Login) - (View Contact Us Details)
+		
+[Faculty] - (Login)
+	(Login) - (Update Profile and Password)
+	
+	(Login) - (Manage Materials)
+		(Manage Materials) > (Add)
+		(Manage Materials) > (View)
+		(Manage Materials) > (Delete)
+		(Manage Materials) > (Recover Deleted)
+		
+	(Login) - (Manage Question Papers)
+		(Manage Question Papers) > (Add Questions)
+		(Manage Question Papers) > (View Questions)
+		(Manage Question Papers) > (Update Questions)
+		(Manage Question Papers) > (Delete Questions)
+		(Manage Question Papers) > (Recover Deleted Questions)
+		
+	(Login) - (View Course)
+	
+	(Login) - (View Exam Details)
+	
+[Student] - (Login)
+	(Login) - (Update Profile and Password)
+	
+	(Login) - (View All Courses)
+	
+	(Login) - (View and Download Materials)
+	
+	(Login) - (Give Exam And Get Result)
+	
+	(Login) - (View Events)
